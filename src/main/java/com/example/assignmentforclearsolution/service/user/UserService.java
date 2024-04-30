@@ -1,12 +1,12 @@
 package com.example.assignmentforclearsolution.service.user;
 
-import com.example.assignmentforclearsolution.dto.user.BirthdayDateRangeDto;
-import com.example.assignmentforclearsolution.dto.user.PhoneNumberRequestDto;
 import com.example.assignmentforclearsolution.dto.address.AddressRequestDto;
+import com.example.assignmentforclearsolution.dto.user.BirthdayDateRangeDto;
 import com.example.assignmentforclearsolution.dto.user.NamesRequestDto;
+import com.example.assignmentforclearsolution.dto.user.PhoneNumberRequestDto;
 import com.example.assignmentforclearsolution.dto.user.UserRegistrationRequestDto;
-import com.example.assignmentforclearsolution.dto.user.UserWithoutAddressRequestDto;
 import com.example.assignmentforclearsolution.dto.user.UserResponseDto;
+import com.example.assignmentforclearsolution.dto.user.UserWithoutAddressRequestDto;
 import java.util.List;
 
 public interface UserService {

@@ -9,5 +9,6 @@ import org.mapstruct.Mapper;
 @Mapper(config = MapperConfig.class)
 public interface AddressMapper {
     AddressDto toDto(Address address);
+
     Address toModel(AddressRequestDto addressRequestDto);
 }

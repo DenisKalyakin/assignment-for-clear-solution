@@ -1,12 +1,11 @@
 package com.example.assignmentforclearsolution.controller.user;
 
-
 import com.example.assignmentforclearsolution.dto.address.AddressRequestDto;
 import com.example.assignmentforclearsolution.dto.user.BirthdayDateRangeDto;
 import com.example.assignmentforclearsolution.dto.user.NamesRequestDto;
 import com.example.assignmentforclearsolution.dto.user.PhoneNumberRequestDto;
-import com.example.assignmentforclearsolution.dto.user.UserWithoutAddressRequestDto;
 import com.example.assignmentforclearsolution.dto.user.UserResponseDto;
+import com.example.assignmentforclearsolution.dto.user.UserWithoutAddressRequestDto;
 import com.example.assignmentforclearsolution.service.user.UserService;
 import jakarta.validation.Valid;
 import java.util.List;

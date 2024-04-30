@@ -1,7 +1,7 @@
 package com.example.assignmentforclearsolution.dto.user;
 
-import java.time.LocalDate;
 import jakarta.validation.constraints.NotNull;
+import java.time.LocalDate;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;

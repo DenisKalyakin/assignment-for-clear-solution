@@ -1,12 +1,12 @@
 package com.example.assignmentforclearsolution.service.user;
 
-import com.example.assignmentforclearsolution.dto.user.BirthdayDateRangeDto;
-import com.example.assignmentforclearsolution.dto.user.PhoneNumberRequestDto;
 import com.example.assignmentforclearsolution.dto.address.AddressRequestDto;
+import com.example.assignmentforclearsolution.dto.user.BirthdayDateRangeDto;
 import com.example.assignmentforclearsolution.dto.user.NamesRequestDto;
+import com.example.assignmentforclearsolution.dto.user.PhoneNumberRequestDto;
 import com.example.assignmentforclearsolution.dto.user.UserRegistrationRequestDto;
-import com.example.assignmentforclearsolution.dto.user.UserWithoutAddressRequestDto;
 import com.example.assignmentforclearsolution.dto.user.UserResponseDto;
+import com.example.assignmentforclearsolution.dto.user.UserWithoutAddressRequestDto;
 import com.example.assignmentforclearsolution.exception.EntityNotFoundException;
 import com.example.assignmentforclearsolution.exception.InvalidDateException;
 import com.example.assignmentforclearsolution.exception.RegistrationException;
@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
     private final AddressService addressService;
     private final UserMapper userMapper;
     private final UserRepository userRepository;
+
     @Override
     public UserResponseDto registration(UserRegistrationRequestDto registrationRequestDto) {
         checkUserAge(registrationRequestDto.getBirthDate());
