@@ -118,7 +118,7 @@ public class UserServiceImpl implements UserService {
             throw new InvalidDateException("Value must be earlier than current date");
         }
         if (birthDate.plusYears(minAgeForRegistration).isAfter(LocalDate.now())) {
-            throw new RegistrationException("Age is less than 18.");
+            throw new RegistrationException("Age is less than " + minAgeForRegistration);
         }
     }
 
@@ -131,9 +131,9 @@ public class UserServiceImpl implements UserService {
 
     @SneakyThrows
     private void checkDateRange(LocalDate from, LocalDate to) {
-        if (from.isAfter(to)) {
+        if (from.isAfter(to) && from.isAfter(LocalDate.now())) {
             throw new InvalidDateException(
-                    "Date 'from' should be before than 'to', or equal 'to'!"
+                    "Date 'from' should be before now and before than 'to', or equal 'to'!"
             );
         }
     }
